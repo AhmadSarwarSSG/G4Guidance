@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model G4Guidance.Models.University;
+@{
+}
+@{
+    ViewData["Title"] = "Edit University";
+}
+@section underline_AdminUni{
+    active
+}
+<div class="card" id="signup">
+    <form asp-action="EditUni" method="post" enctype="multipart/form-data" asp-controller="AdminUniversity"> 
+        <h1 class="card-header text-center">Edit University</h1>
+        <div class="card-body">
+            <div class="form-floating mb-3">
+                <input asp-for="Name" class="form-control" type="text" placeholder="PUCIT" value="@ViewBag.info.Name">
+                <label asp-for="Name">University Name</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Type" type="text" class="form-control" placeholder="Engineering" value="@ViewBag.info.Type">
+                <label asp-for="Type">University Type</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="LastYearsMarks" type="number" class="form-control" placeholder="1055" value="@ViewBag.info.LastYearsMarks">
+                <label asp-for="LastYearsMarks">Closing Merit</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" asp-for="intro" id="intro" class="form-control" placeholder="1055" value="@ViewBag.info.intro">
+                <label asp-for="intro">Introduce University</label>
+            </div>
+
+            <input asp-for="pic" type="file" name="postedFiles" class="w-100"  multiple/>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-dark">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+

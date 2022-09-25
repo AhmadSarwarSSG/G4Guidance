@@ -1,0 +1,110 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Find University";
+}
+@section underline_uni{
+    active
+}
+<script>
+    function getUni() {
+        $.post("@Url.Action("getUniFromType", "University")", {
+            uniData: $("#type").val(),
+            marksData: $("#marks").val()
+        },
+            function(data) {
+                $("#list-custom").html("");
+                for (var i = 0; i < data.length; i++) {
+                    $("#list-custom").append('<div class="col-4"> <div class="card" style="height:100%"><img class="card-img-top" src="'+data[i].pic+'" alt="Card image cap" width="200" height="300"><div class="card-body"><h5 class="card-title">'+data[i].name+'</h5><p class="card-text">'+data[i].intro+'</p></div><ul class="list-group list-group-flush"><li class="list-group-item"><strong>University Type: </strong> '+data[i].type+'</li><li class="list-group-item"><strong>Closing Merit: </strong> '+data[i].lastYearsMarks+'</li></ul></div></div>');
+                }
+            });
+    };
+</script>
+<section id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="promo-title">WE Find the Best For You...</p>
+                <p>
+                    G4 Guidance is a platform that'll help you to get admission in your dream University of
+                    Pakistan'
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eum debitis ab ratione
+                    nostrum
+                    aliquam sequi dicta ipsum cumque! Repellat explicabo eaque tenetur laudantium enim quo quas
+                    provident impedit veritatis.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" id="MainVideo"
+                            src="https://www.youtube.com/embed/4e6KSaCxcHs" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="~/src/End.png" id="endSection">
+</section>
+<section class="Working">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="title">How it Works?</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque explicabo sequi voluptate, hic
+                    asperiores velit necessitatibus animi illo quia placeat eum porro excepturi impedit odit
+                    pariatur libero aspernatur neque sapiente? Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Consectetur molestias perspiciatis cupiditate odio nulla natus deleniti assumenda esse,
+                    vel illum?
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="UniversityForm">
+<div class="card" id="signup">
+    <form method="post" enctype="multipart/form-data"> 
+        <h1 class="card-header text-center">Find University</h1>
+        <div class="card-body">
+            <div class="form-floating mb-3">
+                <select id="type" name="type" class="form-control" onchange="getUni()">
+                    <option value="All">All</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Medical">Medical</option>
+                </select>
+                <label for="type">University Type</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input id="marks" class="form-control" type="number" placeholder="jeo@gmail.com" onchange="getUni()">
+                <label for="marks">Marks</label>
+            </div>
+        </div>
+    </form>
+</div>
+</section>
+<section id="UniList">
+    <div class="container">
+        <div class="row mt-5" id="list-custom">
+            @foreach(var uni in ViewBag.uni)
+            {
+                <div class="col-4">
+                    <div class="card" style="height:100%">
+                         <img class="card-img-top" src="~/@uni.pic" alt="Card image cap" width="200" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title">@uni.Name</h5>
+                            <p class="card-text">@uni.intro</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>University Type: </strong> @uni.Type</li>
+                            <li class="list-group-item"><strong>Closing Merit: </strong> @uni.LastYearsMarks</li>
+                        </ul>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<partial name="_subcribeform" />

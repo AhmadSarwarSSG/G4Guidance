@@ -1,0 +1,108 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = G4Guidance
+build_property.RootNamespace = G4Guidance
+build_property.ProjectDir = E:\VS_Projects\Practice_Events\G4Guidance\G4Guidance\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\VS_Projects\Practice_Events\G4Guidance\G4Guidance
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Aboutus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXR1c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Account/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/AdminPlaylist/AddVideo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QbGF5bGlzdFxBZGRWaWRlby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/AdminPlaylist/EditVideo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QbGF5bGlzdFxFZGl0VmlkZW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/AdminPlaylist/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QbGF5bGlzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/AdminUniversity/AddUni.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vbml2ZXJzaXR5XEFkZFVuaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/AdminUniversity/EditUni.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vbml2ZXJzaXR5XEVkaXRVbmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/AdminUniversity/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vbml2ZXJzaXR5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Blog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Playlist/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWxpc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Shared/Components/FeaturedBlog/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmVhdHVyZWRCbG9nXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Shared/_contactInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9jb250YWN0SW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Shared/_socialMedia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9zb2NpYWxNZWRpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Shared/_subcribeform.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9zdWJjcmliZWZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/University/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdmVyc2l0eVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/VS_Projects/Practice_Events/G4Guidance/G4Guidance/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-tcs6y84giw

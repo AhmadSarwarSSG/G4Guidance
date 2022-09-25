@@ -1,0 +1,76 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model G4Guidance.Models.LoginInfo;
+@{
+    ViewData["Title"] = "Login";
+}
+@section underline_login{
+    active
+}
+<script>
+    function valUsername() {
+        $("#Username-val").html("Checking...")
+        $.post("@Url.Action("CheckUsername", "Account")", {
+            userData: $("#user").val()
+        },
+            function(data) {
+                if (data == 0) {
+                    $("#Username-val").html('<font color="Red">Username Does not Exist</font>')
+                    $("#submit_btn").attr('disabled', 'disabled');
+                }
+                else {
+                    $("#Username-val").html('<font color="Green">Valid Username</font>')
+                    $("#submit_btn").removeAttr('disabled', 'disabled');
+                }
+            });
+    };
+    function valPassword() {
+        $("#Password-val").html("Checking...")
+        $.post("@Url.Action("CheckPassword", "Account")", {
+            userData: $("#user").val(),
+            password: $("#password").val()
+        },
+            function(data) {
+                if (data == 0) {
+                    $("#Password-val").html('<font color="Red">Incorrect Password</font>')
+                    $("#submit_btn").attr('disabled', 'disabled');
+                }
+                else {
+                    $("#Password-val").html('<font color="Green">Correct Password</font>')
+                    $("#submit_btn").removeAttr('disabled', 'disabled');
+                }
+            });
+    };
+</script>
+<div asp-validation-summary="All" role="alert" style="display:none"></div>
+<section id="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <form asp-action="login" method="post" id="login-form">
+                        <h1 class="card-header text-center">Login</h1>
+                        <div class="card-body">
+                            <div class="form-floating mb-3">
+                                <input asp-for="Username" id="user" class="form-control" type="text" placeholder="Joe Doe" onchange="valUsername()">
+                                <label asp-for="Username">Username</label>
+                                <span id="Username-val"></span>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input asp-for="Password" type="password" class="form-control" id="password" placeholder="Enter Password"  onchange="valPassword()">
+                                <label asp-for="Password">Password</label>
+                                <span id="Password-val"></span>
+                            </div>
+                            <p class="text-danger text-center">@ViewBag.Fail</p>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-dark" id="submit_btn">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

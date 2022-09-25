@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+    ViewData["Title"] = "Admin University";
+}
+@section underline_AdminUni{
+    active
+}
+<h1>University</h1>
+<a href="/AdminUniversity/AddUni"><button class="btn-success">Add</button></a>
+<section id="unilistView">
+    @foreach(var uni in ViewBag.list)
+    {
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="~/@uni.pic" width="400" height="200">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">@uni.Name</h5>
+                        <h6 class="card-text">@uni.Type</h6>
+                        <h6 class="card-text">Closing Merit = @uni.LastYearsMarks</h6>
+                        <p class="card-text"> @uni.intro</p>
+                        <a asp-route-id="@uni.ID" asp-action="EditUni" asp-controller="AdminUniversity"><button class="btn-success">Edit</button></a><a asp-route-id="@uni.ID" asp-action="DeleteUni" asp-controller="AdminUniversity"><button class="btn-danger">Delete</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    }

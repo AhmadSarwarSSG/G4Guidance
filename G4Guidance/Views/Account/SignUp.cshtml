@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model G4Guidance.Models.LoginInfo;
+@{
+    ViewData["Title"] = "Sign Up";
+}
+@section underline_signup{
+    active
+}
+<div class="card" id="signup">
+    <form asp-action="signup" method="post" enctype="multipart/form-data" asp-controller="Account"> 
+        <h1 class="card-header text-center">Sign Up</h1>
+        <div class="card-body">
+            <div class="form-floating mb-3">
+                <input asp-for="Username" class="form-control" type="text" placeholder="Joe Doe">
+                <label asp-for="Username">Username</label>
+                <p style="color:red;">@Html.ValidationMessage("username")</p>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Email" class="form-control" type="text" placeholder="jeo@gmail.com">
+                <label asp-for="Email">Email</label>
+                <p style="color:red;">@Html.ValidationMessage("email")</p>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Password" type="password" class="form-control" placeholder="Enter Password">
+                <label asp-for="Password">Password</label>
+                <p style="color:red;">@Html.ValidationMessage("password")</p>
+            </div>
+            <input asp-for="ProfileImg" type="file" name="postedFiles" class="w-100"  multiple/>  
+            <div class="text-center">
+                <button type="submit" class="btn btn-dark">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</div>
